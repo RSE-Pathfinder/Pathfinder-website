@@ -1,5 +1,5 @@
-li{
-    color: lightgreen;
+li.Sub{
+    color: aquamarine;
 }
 li.ToC{
     color: white;
@@ -11,4 +11,14 @@ div{
     border: 2px solid white;
     padding: 10px;
     margin: 10px;
+}
+a{
+    color: lightblue;
+}
+body{
+    color:aliceblue;
+    font-size: 25px;
+}
+html{
+    background-color: black;
 }
