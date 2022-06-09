@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="../css/ROS_API.css">
+    <title>ROS C++ API</title>
+
+    <header><h1>C++ API</h1></header>
+
+    <body>
+        <p><!-- Table of Contents -->
+            <ol class="ToC">
+                Table of Contents
+                <li><a href="#Init">Node initialisation</a></li>
+                <ul>
+                    <li>ros::init()</li>
+                    <li>ros::NodeHandle</li>
+                </ul>
+                <li><a href="#Pub">Publishing</a></li>
+                <li><a href="#Sub">Subscribing</a></li>
+                <li><a href="#Serv">Services</a></li>
+                <li><a href="#TnD">Time & Delays</a></li>
+                <li><a href="#Loop">Loops</a></li>
+                <li><a href="#Extra">Extras</a></li>
+                <li><a href="#Excep">Exceptions</a></li>
+            </ol>
+        </p>
+
+        <p><!-- Main Body -->
+            <ol>
+                <!-- Part 1 -->
+                <li id="Init" class="Sub">Node initialisation</li>
+                <div>
+                    <code>ros::init( &lt;argc&gt;, &lt;argv&gt;, &lt;node_name&gt;, &lt;options&gt;)</code>
+                    <ul>
+                        At the begining of your code, you need to initialize the node in order for it to be registered in the ROS network.
+                        <li class="Sub">&lt;argc&gt; (int)</li> The number of terminal inputs.
+                        <li class="Sub">&lt;argv&gt; (char**)</li> The list of terminal input. Remapping arguments are processed here.
+                        <li class="Sub">&lt;node_name&gt; (std::string)</li> Name of the node.
+                        <li class="Sub">&lt;options&gt; (uint32_t)</li> Additional operations for initialisation.
+                        <ul>
+                            <li class="Sub2">ros::init_options::NoSigninHandler</li>
+                            This prevents the installation of the SIGNINT handler which makes sure the node gets shutdown properly.
+                            <li class="Sub2">ros::init_options::AnonymousName</li>
+                            This adds a randomly generated number at the end of the node name for anonymity.
+                            <li class="Sub2">ros::init_options::NoRosout</li>
+                            Prevents broadcast to the rosconsole output on the /rosout topic.
+                        </ul>
+                    </ul>
+                </div>
+
+                <!-- Part 2 -->
+                <li id="Pub" class="Sub">Publishing</li>
+                <div>
+                    <code></code>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <!-- Part 3 -->
+                <li id="Sub" class="Sub">Subscribing</li>
+                <div>
+                    <code></code>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <!-- Part 4 -->
+                <li id="Serv" class="Sub">Services</li>
+                <div>
+                    <code></code>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <!-- Part 5 -->
+                <li id="TnD" class="Sub">Time & Delays</li>
+                <div>
+                    <code></code>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <!-- Part 6 -->
+                <li id="Loop" class="Sub">Loops</li>
+                <div>
+                    <code></code>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <!-- Part 7 -->
+                <li id="Extra" class="Sub">Extras</li>
+                <div>
+                    <code></code>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <!-- Part 8 -->
+                <li id="Excep" class="Sub">Exceptions</li>
+                <div>
+                    <code></code>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </ol>
+        </p>
+    </body>
+
+    <h2>By: Muhammad Syamim Bin Shamsulbani</h2>
+    <footer>All information is derived from the <a href="http://wiki.ros.org/roscpp/Overview">ROS Wiki</a>. All rights reserved.</footer>
+</html>
