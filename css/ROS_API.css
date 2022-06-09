@@ -4,11 +4,21 @@ li.Sub{
 li.ToC{
     color: white;
 }
+li.Sub2{
+    color: gold;
+}
+ol.ToC{
+    border: 2px solid white;
+    max-width: fit-content;
+    margin: 10px;
+    padding: 40px;
+}
 code{
     font-size: 25px;
 }
 div{
     border: 2px solid white;
+    max-width: fit-content;
     padding: 10px;
     margin: 10px;
 }
