@@ -1,60 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <link rel="stylesheet" href="../css/ROS_API.css">
 <title>ROS Python API</title>
 
 <header><h1>Python API</h1></header>
 
 <body>
-    <!-- Table of Contents-->
-    <ol class="ToC">
-        Table of contents<br>
-        <li><a href="#Init">Node initialisation</a></li>
-        <ul><li>rospy.init_node()</li></ul>
-        <li><a href="#Pub">Publishing</a></li>
+
+<!-- Table of Contents-->
+<ol class="ToC">
+    Table of contents<br>
+    <li><a href="#Init">Node initialisation</a></li>
+    <ul><li>rospy.init_node()</li></ul>
+    <li><a href="#Pub">Publishing</a></li>
+    <ul>
+        <li>rospy.Publisher()</li>
+        <ul><li>rospy.Publisher.publish()</li></ul>
+    </ul>
+    <li><a href="#Sub">Subscribing</a></li>
+    <ul><li>rospy.Subscriber()</li></ul>
+    <li><a href="#Serv">Service</a></li>
+    <ul>
+        <li>rospy.Service()</li>
+        <li>rospy.ServiceProxy()</li>
+        <li>rospy.wait_for_service()</li>
+    </ul>
+    <li><a href="#TnD">Time & Delays</a></li>
+    <ul>
+        <li>rospy.Time()</li>
         <ul>
-            <li>rospy.Publisher()</li>
-            <ul><li>rospy.Publisher.publish()</li></ul>
+            <li>rospy.Time.now()</li>
+            <li>rospy.Time.from_sec()</li>
         </ul>
-        <li><a href="#Sub">Subscribing</a></li>
-        <ul><li>rospy.Subscriber()</li></ul>
-        <li><a href="#Serv">Service</a></li>
-        <ul>
-            <li>rospy.Service()</li>
-            <li>rospy.ServiceProxy()</li>
-            <li>rospy.wait_for_service()</li>
-        </ul>
-        <li><a href="#TnD">Time & Delays</a></li>
-        <ul>
-            <li>rospy.Time()</li>
-            <ul>
-                <li>rospy.Time.now()</li>
-                <li>rospy.Time.from_sec()</li>
-            </ul>
-            <li>rospy.get_time()</li>
-            <li>rospy.Duration()</li>
-            <ul><li>rospy.Duration.from_sec()</li></ul>
-            <li>rospy.sleep()</li>
-        </ul>
-        <li><a href="#Loop">Loops</a></li>
-        <ul>
-            <li>rospy.Rate()</li>
-            <li>rospy.Timer()</li>
-        </ul>
-        <li><a href="#Extra">Extras</a></li>
-        <ul>
-            <li>rospy.spin()</li>
-        </ul>
-        <li><a href="#Excep">Exceptions</a></li>
-        <ul>
-            <li>ROSException</li>
-            <li>ROSSerializationException</li>
-            <li>ROSInitException</li>
-            <li>ROSInterruptException</li>
-            <li>ROSInternalException</li>
-            <li>ServiceException</li>
-        </ul>
-    </ol>
+        <li>rospy.get_time()</li>
+        <li>rospy.Duration()</li>
+        <ul><li>rospy.Duration.from_sec()</li></ul>
+        <li>rospy.sleep()</li>
+    </ul>
+    <li><a href="#Loop">Loops</a></li>
+    <ul>
+        <li>rospy.Rate()</li>
+        <li>rospy.Timer()</li>
+    </ul>
+    <li><a href="#Extra">Extras</a></li>
+    <ul>
+        <li>rospy.spin()</li>
+    </ul>
+    <li><a href="#Excep">Exceptions</a></li>
+    <ul>
+        <li>ROSException</li>
+        <li>ROSSerializationException</li>
+        <li>ROSInitException</li>
+        <li>ROSInterruptException</li>
+        <li>ROSInternalException</li>
+        <li>ServiceException</li>
+    </ul>
+</ol>
+
+<!-- Main Body -->
 <p>
     <ol>
         <!-- Part 1-->
@@ -281,5 +285,5 @@
 </body>
 
 <h2>By: Muhammad Syamim Bin Shamsulbani</h2>
-<footer>All information is derived from the <a href="http://wiki.ros.org/rospy/Overview">ROS wiki</a>. All rights reserved.</footer>
+<footer>All information is derived from the <a href="http://wiki.ros.org/rospy/Overview">ROS Wiki</a>. All rights reserved.</footer>
 </html>
