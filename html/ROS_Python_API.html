@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <link rel="stylesheet" href="../css/ROS_API.css">
 <title>ROS Python API</title>
 
-<header><h1>Python API</h1></header>
+<header>
+    <h1>Python API</h1>
+</header>
 
 <body>
 
 <!-- Table of Contents-->
 <ol class="ToC">
-    Table of contents<br>
+    Table of Contents
+    <br>
+
     <li><a href="#Init">Node initialisation</a></li>
-    <ul><li>rospy.init_node()</li></ul>
+    <ul>
+        <li>rospy.init_node()</li>
+    </ul>
+
     <li><a href="#Pub">Publishing</a></li>
     <ul>
         <li>rospy.Publisher()</li>
-        <ul><li>rospy.Publisher.publish()</li></ul>
+        <ul>
+            <li>rospy.Publisher.publish()</li>
+        </ul>
     </ul>
+
     <li><a href="#Sub">Subscribing</a></li>
-    <ul><li>rospy.Subscriber()</li></ul>
+    <ul>
+        <li>rospy.Subscriber()</li>
+    </ul>
+
     <li><a href="#Serv">Service</a></li>
     <ul>
         <li>rospy.Service()</li>
         <li>rospy.ServiceProxy()</li>
         <li>rospy.wait_for_service()</li>
     </ul>
+
     <li><a href="#TnD">Time & Delays</a></li>
     <ul>
         <li>rospy.Time()</li>
@@ -35,18 +49,23 @@
         </ul>
         <li>rospy.get_time()</li>
         <li>rospy.Duration()</li>
-        <ul><li>rospy.Duration.from_sec()</li></ul>
+        <ul>
+            <li>rospy.Duration.from_sec()</li>
+        </ul>
         <li>rospy.sleep()</li>
     </ul>
+
     <li><a href="#Loop">Loops</a></li>
     <ul>
         <li>rospy.Rate()</li>
         <li>rospy.Timer()</li>
     </ul>
+
     <li><a href="#Extra">Extras</a></li>
     <ul>
         <li>rospy.spin()</li>
     </ul>
+    
     <li><a href="#Excep">Exceptions</a></li>
     <ul>
         <li>ROSException</li>
@@ -58,35 +77,35 @@
     </ul>
 </ol>
 
-<!-- Main Body -->
+<!-- Main Body-->
 <p>
     <ol>
         <!-- Part 1-->
         <li id="Init" class="Sub">Node initialisation</li>
         <div><!-- rospy.init_node-->
             At the beginning of your code, the first thing to be done is to initialize the node. This runs the necessary constructors required for the node to work.<br><br>
-        <code>rospy.init_node( &lt;node_name&gt;, &lt;anonymous&gt;, &lt;log_level&gt;, &lt;disable_signals&gt; )</code>
-        <ul>
-            This constructs the node object.
-            <li class="Sub">&lt;anonymous&gt; default=False</li>Sets the flag to append random numbers to the name. Only set to true if duplicates of this node is not an issue.<br>
-            <li class="Sub">&lt;log_level&gt; default=rospy.INFO</li>Sets the level when publishing messages to rosout (similar to std::cout)<br>
-            <ul style="font-size: 75%">
-                <section style="color:gold">
-                <li>DEBUG</li>
-                <li>INFO</li>
-                <li>WARN</li>
-                <li>ERR</li>
-                <li>FATAL</li>
-                </section>
+            <code>rospy.init_node( &lt;node_name&gt;, &lt;anonymous&gt;, &lt;log_level&gt;, &lt;disable_signals&gt; )</code><br><br>
+            <ul>
+                This constructs the node object.<br><br>
+                <li class="Sub">&lt;anonymous&gt;, default=False</li>Sets the flag to append random numbers to the name. Only set to true if duplicates of this node is not an issue.<br><br>
+                <li class="Sub">&lt;log_level&gt;, default=rospy.INFO</li>Sets the level when publishing messages to rosout (similar to std::cout)<br>
+                <ul style="font-size: 75%">
+                    <section style="color:gold">
+                    <li>DEBUG</li>
+                    <li>INFO</li>
+                    <li>WARN</li>
+                    <li>ERR</li>
+                    <li>FATAL</li>
+                    </section><br>
+                </ul>
+                <li class="Sub">&lt;disable_signals&gt;, default=False</li>Prevents Ctrl + C from working.<br><br>
             </ul>
-            <li class="Sub">&lt;disable_signals&gt; default=False</li>Prevents Ctrl+C from working.<br>
-        </ul>
         </div>
 
         <!-- Part 2-->
         <li id="Pub" class="Sub">Publishing</li>
         <div><!-- rospy.Publisher-->
-        <code>rospy.Publisher( &lt;topic_name&gt;, &lt;msg_type&gt;, &lt;subscriber_listener&gt;, &lt;tcp_nodelay&gt;, &lt;latch&gt;, &lt;headers&gt;, &lt;queue_size&gt; )</code>
+        <code>rospy.Publisher( &lt;topic_name&gt;, &lt;msg_type&gt;, &lt;subscriber_listener&gt;, &lt;tcp_nodelay&gt;, &lt;latch&gt;, &lt;headers&gt;, &lt;queue_size&gt; )</code><br><br>
         <ul>
             This constructs a publisher object for a specified topic.
             <li class="Sub">&lt;msg_type&gt;</li>The message class derived from the .msg file.<br>
@@ -109,7 +128,7 @@
         <!-- Part 3-->
         <li id="Sub" class="Sub">Subscribing</li>
         <div><!-- rospy.Subscriber-->
-        <code>rospy.Subscriber( &lt;topic_name&gt;, &lt;msg_type&gt;, &lt;callback&gt; )</code>
+        <code>rospy.Subscriber( &lt;topic_name&gt;, &lt;msg_type&gt;, &lt;callback&gt; )</code><br><br>
         <ul>
             This constructs a subscriber object for a specified topic.
             <li class="Sub">&lt;msg_type&gt;</li>The message class derived from the .msg file.<br>
@@ -120,7 +139,7 @@
         <!-- Part 4-->
         <li id="Serv" class="Sub">Service</li>
         <div><!-- rospy.Service-->
-        <code>rospy.Service( &lt;service_name&gt;, &lt;service_class&gt;, &lt;handler&gt;, &lt;buffer_size&gt; )</code>
+        <code>rospy.Service( &lt;service_name&gt;, &lt;service_class&gt;, &lt;handler&gt;, &lt;buffer_size&gt; )</code><br><br>
         <ul>
             This constructs a service provider object.
             <li class="Sub">&lt;service_class&gt;</li>The service class derived from the .srv file.<br>
@@ -139,7 +158,7 @@
         </div>
         
         <div><!-- rospy.ServiceProxy-->
-        <code>rospy.ServiceProxy( &lt;service_name&gt;, &lt;service_class&gt;, &lt;persistent&gt;, &lt;headers&gt; )</code>
+        <code>rospy.ServiceProxy( &lt;service_name&gt;, &lt;service_class&gt;, &lt;persistent&gt;, &lt;headers&gt; )</code><br><br>
         <ul>
             This constructs a proxy functor to a specified service. To send a request to the service, <br>
             simply call the functor with the function call operator () with the arguments corresponding to the service class.
@@ -150,7 +169,7 @@
         </div>
 
         <div><!-- rospy.wait_for_service-->
-            <code>rospy.wait_for_service( &lt;service_name&gt;, &lt;timeout&gt; )</code>
+            <code>rospy.wait_for_service( &lt;service_name&gt;, &lt;timeout&gt; )</code><br><br>
             <ul>
                 This causes the node to wait until the specified service is available.
                 <li class="Sub">&lt;timeout&gt; default=None</li>
@@ -160,7 +179,7 @@
         <!-- Part 5-->
         <li id="TnD" class="Sub">Time & Delays</li>
         <div><!-- rospy.Time()-->
-            <code>rospy.Time( &lt;secs&gt;, &lt;nsecs&gt; )</code>
+            <code>rospy.Time( &lt;secs&gt;, &lt;nsecs&gt; )</code><br><br>
             <ul>
                 This function constructs a Time object.
                 <li class="Sub">&lt;secs&gt; default=0 (int)</li> The seconds counter.
@@ -169,7 +188,7 @@
         </div>
 
         <div><!-- rospy.Time.now()-->
-            <code>rospy.Time.now( &lt;empty&gt; )</code>
+            <code>rospy.Time.now( &lt;empty&gt; )</code><br><br>
             <ul>
                 This function returns a Time object that contains two data members
                 <li class="Sub">secs</li> The seconds counter.
@@ -178,7 +197,7 @@
         </div>
 
         <div><!-- rospy.Time.from_sec()-->
-            <code>rospy.Time.from_sec( &lt;float_secs&gt; )</code>
+            <code>rospy.Time.from_sec( &lt;float_secs&gt; )</code><br><br>
             <ul>
                 This function converts the input float seconds representation into a new Time object with the corresponding seconds and nano seconds values.
                 <li class="Sub">&lt;float_secs&gt;</li> Floating point representation of time in seconds (similar to Python's time.time() representation).
@@ -186,14 +205,14 @@
         </div>
 
         <div><!-- rospy.get_time()-->
-            <code>rospy.get_time( &lt;empty&gt; )</code>
+            <code>rospy.get_time( &lt;empty&gt; )</code><br><br>
             <ul>
                 This function returns time in seconds in the floating point representation.
             </ul>
         </div>
         
         <div><!-- rospy.Duration()-->
-            <code>rospy.Duration( &lt;secs&gt; )</code>
+            <code>rospy.Duration( &lt;secs&gt; )</code><br><br>
             <ul>
                 This function creates a Duration object for timing use.
                 <li class="Sub">&lt;secs&gt; (int)</li> Time in seconds.
@@ -201,7 +220,7 @@
         </div>
 
         <div><!-- rospy.Duration.from_sec()-->
-            <code>rospy.Duration.from_sec( &lt;float_secs&gt; )</code>
+            <code>rospy.Duration.from_sec( &lt;float_secs&gt; )</code><br><br>
             <ul>
                 This function converts seconds from a floating point representation into a Duration object with the corresponding values.
                 <li class="Sub">&lt;float_secs&gt;</li> Seconds in floating point representation. 
@@ -212,7 +231,7 @@
         </div>
 
         <div><!-- rospy.sleep()-->
-            <code>rospy.sleep( &lt;duration&gt; )</code>
+            <code>rospy.sleep( &lt;duration&gt; )</code><br><br>
             <ul>
                 This function causes the ROS node to sleep for an amount of time.
                 <li class="Sub">&lt;duration&gt; (float | Duration)</li> Duration to sleep for. Can be in float or a Duration object.
@@ -222,7 +241,7 @@
         <!-- Part 6-->
         <li id="Loop" class="Sub">Loops</li>
         <div><!-- rospy.Rate()-->
-            <code>rospy.Rate( &lt;hz&gt; )</code>
+            <code>rospy.Rate( &lt;hz&gt; )</code><br><br>
             <ul>
                 This function creates a Rate object that is used for loops.
                 <li class="Sub">&lt;hz&gt;</li> Number of cycles per second.
@@ -230,7 +249,7 @@
         </div>
 
         <div><!-- rospy.Timer()-->
-            <code>rospy.Timer( &lt;period&gt;, &lt;callback&gt;, &lt;oneshot&gt; )</code>
+            <code>rospy.Timer( &lt;period&gt;, &lt;callback&gt;, &lt;oneshot&gt; )</code><br><br>
             <ul>
                 This function creates a timer object that will run a user defined function after a certain amount of time.
                 <li class="Sub">&lt;period&gt;</li> Period between calls.
@@ -242,7 +261,7 @@
         <!-- Part 7-->
         <li id="Extra" class="Sub">Extras</li>
         <div><!-- rospy.spin()-->
-            <code>rospy.spin( &lt;empty&gt; )</code>
+            <code>rospy.spin( &lt;empty&gt; )</code><br><br>
             <ul>
                 This blocks the program from shutting down and progressing until the ROS network initiates a shutdown or CTRL + C.
             </ul>
@@ -285,5 +304,5 @@
 </body>
 
 <h2>By: Muhammad Syamim Bin Shamsulbani</h2>
-<footer>All information is derived from the <a href="http://wiki.ros.org/rospy/Overview">ROS Wiki</a>. All rights reserved.</footer>
+<footer>All information is derived from the <a href="http://wiki.ros.org/rospy/Overview">ROS wiki</a>. All rights reserved.</footer>
 </html>
