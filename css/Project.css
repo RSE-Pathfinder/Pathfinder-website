@@ -1,0 +1,8 @@
+html{
+    background-color: black;
+    color: white;
+}
+.center{
+    margin: auto;
+    display: block;
+}
