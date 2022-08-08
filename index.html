@@ -1,73 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- Header -->
 <head>
-    <link rel="stylesheet" href="css/header.css">
     <title>Pathfinder</title>
+    <link rel="icon" href="/assets/images/pathfinder_icon.png">
+    <link rel="stylesheet" href="css/header.css">
+
+    <!-- Navigation bar -->
+    <h1 style="text-align:center;"><a style="text-decoration: none;color: white;"href="index.html">RSE2107A Systems Engineering Project</a></h1>
+    <div class="navbarhead">
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">API Documentation
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="html/ROS_Python_API.html">ROS Python API</a>
+                    <a href="html/ROS_Cpp_API.html">ROS C++ API</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="html/Project_1.html">Project 1: Land Based Automated Locomotive</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="html/gallery.html">Gallery</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- End of navbar-->
+
 </head>
 
 <body style="font-family:'Cambria New', Cambria, monospace; color: white; background-color: black; text-align: center">
 
-<!--This code here is the header of the website and its navigation bar-->
-<h1 style="text-align:center;"><a style="text-decoration: none;color: white;"href="index.html">RSE2107A Systems Engineering Project</a></h1>
-<div class="navbarhead">
-<div class="navbar">
-    <div class="dropdown">
-        <button class="dropbtn">API Documentation
-            <i class="fa fa-caret-down"></i>
-        </button>
-    <div class="dropdown-content">
-        <a href="html/ROS_Python_API.html">ROS Python API</a>
-        <a href="html/ROS_Cpp_API.html">ROS C++ API</a>
-    </div>
-</div>
-<div class="dropdown">
-    <button class="dropbtn">Projects
-        <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-        <a href="html/Project_1.html">Project 1: Land Based Automated Locomotive</a>
-    </div>
-    </div>
-    <div class="dropdown">
-        <a href="html/gallery.html">Gallery</a>
-    </div>
-</div>
-    
-</div>
-<br>
-<!--End of header and navbar-->
-
-<table style="margin-left:auto;margin-right:auto" border="7" cellpadding="21">
-    <tr>
-        <th colspan="2"><h2>API Documentation</h2></th>
-    </tr>
-    <tr>
-        <td><a style="color: white;" href="html/ROS_Python_API.html">ROS Python API</a></td>
-        <td><a style="color: white;" href="html/ROS_Cpp_API.html">ROS C++ API</a></td>
-    </tr>
-</table>
+<!-- Project Showcase-->
 <br>
 <table style="margin: auto; border: 7;" border="7" cellpadding="21">
     <tr>
-        <td><a href="html/Project_1.html">Project 1<br>(Land Based Automated Locomotive)</a><br><br>
-            <img src="assets/images/Project_1_robot.png" width="121" height="121"></td>
+        <td>
+            <a href="html/Project_1.html" style="color: white;">Project 1<br>(Land Based Automated Locomotive)</a><br><br>
+            <img src="assets/images/Project_1_robot.png" width="200" height="200">
+        </td>
         <td>Project 2<br>(Changi Airport)</td>
         <td>Project 3<br>(TBA)</td>
     </tr>
 </table>
 
+<!-- About Us-->
 <br><hr><h2>About Us</h2><hr>
 <p style="font-size: medium;">
     <img src="assets/images/pathfinder_icon.png" alt="pathfinder_icon" class="center" width="121" height="121"><br>
-    <br>
-    Caption: Team Pathfinder Icon<br>
-    <br>
+    <br>Caption: Team Pathfinder Icon<br><br>
 </p>
 <p style="font-size: large;">
     Team Pathfinder is a group of students from the Singapore Institute of Technology.<br>
     The team consists of five members: Paul Yong, Muhammad Syamim, Lim Jun Hao Derek, Joshua Ng, Bryan Sentoso.<br>
     This website is a personal project by the team to document our learning journey in Robotics Systems.<br>
+    <br>
+    
+    <!-- Syamim -->
+    <div class="left-about">
+        <div class="left">
+            <img src="assets/images/About/Syamim.jpeg" height="350"><br>
+        </div>
+        <div class="right">
+            Muhammad Syamim<br><br>
+            Passionate in robotics, especially in exosuit and wearable robotics technologies.<br>
+            I take pride in my software skills specifically in C++, Python and Java.<br>
+            My hobbies are tinkering and building my own robots and software.<br>
+            <br><br>
+            Github: <a href="https://github.com/VOCOM" style="color: darkcyan;">https://github.com/VOCOM</a><br>
+            Linkedin: <a href="https://www.linkedin.com/in/syamim-shamsulbani/" style="color: darkcyan;">https://www.linkedin.com/in/syamim-shamsulbani/</a>
+        </div>
+    </div>
+
+    <!-- Paul -->
+    <div class="right-about">
+        <div class="left">
+            Paul Yong<br><br>
+            Stuff<br>
+            <br><br>
+            Github:<br>
+            Linkedin:
+        </div>
+        <div class="right">
+            Picture
+        </div>
+    </div>
+
+    <!-- Bryan -->
+    <div class="left-about">
+        <div class="left">
+            Picture
+        </div>
+        <div class="right">
+            Bryan Sentoso<br><br>
+            Stuff<br>
+            <br><br>
+            Github:<br>
+            Linkedin:
+        </div>
+    </div>
+
+    <!-- Derek -->
+    <div class="right-about">
+        <div class="left">
+            Derek Lim<br><br>
+            Stuff<br>
+            <br><br>
+            Github:<br>
+            Linkedin:
+        </div>
+        <div class="right">
+            Picture
+        </div>
+    </div>
+
+    <!-- Joshua -->
+    <div class="left-about">
+        <div class="left">
+            Picture
+        </div>
+        <div class="right">
+            Joshua<br><br>
+            Stuff<br>
+            <br><br>
+            Github:<br>
+            Linkedin:
+        </div>
+    </div>
+
     <br>
     This website is being hosted on GitHub Pages.
     For more information on GitHub Pages, click <a style="color: white;" href="https://pages.github.com/">here</a><br>
@@ -75,6 +144,7 @@
     <br>
 </p>
 
+<!-- Footer -->
 <hr><address style="font-size: medium;">
     Written by Paul Yong and Muhammad Syamim<br>
     Singapore Institute of Technology
