@@ -2,16 +2,43 @@
 <html lang="en">
 
 <link rel="stylesheet" href="../css/ROS_API.css">
+<link rel="stylesheet" href="../css/header.css">
+<link rel="icon" href="/assets/images/pathfinder_icon.png">
 <title>ROS C++ API</title>
 
-<!--This code here is the header of the website and its navigation bar-->
-<h1 style="text-align:center;"><a style="text-decoration: none;color: white;"href="../index.html">RSE2107A Systems Engineering Project</a></h1>
-<br>
-<!--End of header and navbar-->
+<header>
+    <!-- Navigation bar -->
+    <h1 style="text-align:center;"><a style="text-decoration: none;color: white;"href="../index.html">RSE2107A Systems Engineering Project</a></h1>
+    <div class="navbarhead">
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">API Documentation
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../html/ROS_Python_API.html">ROS Python API</a>
+                    <a href="../html/ROS_Cpp_API.html">ROS C++ API</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../html/Project_1.html">Project 1: Land Based Automated Locomotive</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="../html/gallery.html">Gallery</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- End of navbar-->
+    <h1>C++ API</h1>
+</header>
 
 <body>
-
-<header><h1>C++ API</h1></header>
 
 <!-- Table of Contents -->
 <p>
@@ -74,7 +101,7 @@
     <ol>
         <!-- Part 1 -->
         <li id="Init" class="Sub">Node initialisation</li>
-        <div><!-- ros::init() -->
+        <div class="node"><!-- ros::init() -->
             <code>ros::init( &lt;argc&gt;, &lt;argv&gt;, &lt;node_name&gt;, &lt;options&gt;)</code>
             <ul>
                 At the begining of your code, you need to initialize the node in order for it to be registered in the ROS network.
@@ -93,7 +120,7 @@
             </ul>
         </div>
 
-        <div><!-- ros::NodeHandle -->
+        <div class="node"><!-- ros::NodeHandle -->
             <code>ros::NodeHandle &lt;handle_name&gt;(&lt;namespace&gt;)</code>
             <ul>
                 After initialising the node, create a node handler which will manage an internal reference count for starting and shutting down a node.
@@ -111,7 +138,7 @@
 
         <!-- Part 2 -->
         <li id="Pub" class="Sub">Publishing</li>
-        <div>
+        <div class="node">
             <code></code>
             <ul>
                 <li></li>
@@ -120,7 +147,7 @@
 
         <!-- Part 3 -->
         <li id="Sub" class="Sub">Subscribing</li>
-        <div>
+        <div class="node">
             <code></code>
             <ul>
                 <li></li>
@@ -129,7 +156,7 @@
 
         <!-- Part 4 -->
         <li id="Serv" class="Sub">Services</li>
-        <div>
+        <div class="node">
             <code></code>
             <ul>
                 <li></li>
@@ -138,7 +165,7 @@
 
         <!-- Part 5 -->
         <li id="TnD" class="Sub">Time & Delays</li>
-        <div>
+        <div class="node">
             <code></code>
             <ul>
                 <li></li>
@@ -147,7 +174,7 @@
 
         <!-- Part 6 -->
         <li id="Loop" class="Sub">Loops</li>
-        <div>
+        <div class="node">
             <code></code>
             <ul>
                 <li></li>
@@ -156,7 +183,7 @@
 
         <!-- Part 7 -->
         <li id="Extra" class="Sub">Extras</li>
-        <div>
+        <div class="node">
             <code></code>
             <ul>
                 <li></li>
@@ -165,7 +192,7 @@
 
         <!-- Part 8 -->
         <li id="Excep" class="Sub">Exceptions</li>
-        <div>
+        <div class="node">
             <code></code>
             <ul>
                 <li></li>
