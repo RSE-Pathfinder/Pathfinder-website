@@ -1,35 +1,42 @@
- .navbarhead{
+/* Default Color Scheme */
+html{
+    background-color: black;
+    color: white;
+    font-family:'Cambria New', Cambria, monospace;
+    font-size: 20px;
+}
+
+.navbarhead{
     position: sticky; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the bottom of the page */
     width: 100%; /* Full width */
- }
- 
- /* Navbar container */
- .navbar {
+}
+
+/* Navbar container */
+.navbar {
     overflow: hidden;
     background-color: #333;
     font-family: Arial;
-    
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
+}
+
+/* Links inside the navbar */
+.navbar a {
     float: left;
     font-size: 16px;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
   
-  /* The dropdown container */
-  .dropdown {
+/* The dropdown container */
+.dropdown {
     float: left;
     overflow: hidden;
-  }
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
@@ -38,66 +45,82 @@
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
-  }
-  
-  /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
+}
+
+/* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: red;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  } 
+}
 
-  /* About us segment */
-  .left-about{
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Home title */
+h1.title{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1.title a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+/* Left About us segment */
+.left-about{
     border: 2px solid white;
     padding: 10px;
     margin: 10px;
     margin-right: 35%;
     text-align: center;
     display: grid;
-  }
+}
 
-  .right-about{
+/* Right About us segment */
+.right-about{
     border: 2px solid white;
     padding: 10px;
     margin: 10px;
     margin-left: 35%;
     text-align: center;
     display: grid;
-  }
+}
 
-  .left{
+/* Left grid */
+.left{
     grid-column: 1;
-  }
+}
 
-  .right{
+/* Right grid */
+.right{
     grid-column: 2;
-  }
+}
