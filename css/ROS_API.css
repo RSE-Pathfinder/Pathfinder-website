@@ -1,34 +1,57 @@
-li.Sub{
-    color: aquamarine;
-}
-li.ToC{
-    color: white;
-}
-li.Sub2{
-    color: gold;
-}
+/* Table of Contents*/
 ol.ToC{
     border: 2px solid white;
     max-width: fit-content;
     margin: 10px;
     padding: 40px;
 }
-code{
-    font-size: 25px;
+
+/* Table of Contents elements */
+li.ToC{
+    color: white;
 }
-div.node{
+
+/* Table of Contents links */
+ol.ToC li a{
+    color: lightblue;
+}
+
+/* API Segments */
+ol.API div{
     border: 2px solid white;
     max-width: fit-content;
     padding: 20px;
     margin: 10px;
 }
-a{
-    color: lightblue;
-}
-body{
-    color:aliceblue;
+
+/* API Code Segments */
+ol.API div code{
     font-size: 25px;
 }
-html{
-    background-color: black;
+
+/* API Function Grouping */
+ol.API li{
+    color: aquamarine;
+}
+
+/* API Parameter Descriptions */
+ol.API div ul li{
+    color: aquamarine;
+}
+
+/* API Parameter sub-listing */
+ol.API div ul.gold li{
+    color: gold;
+    font-size: 75%
+}
+
+/* API Comments */
+span.API{
+    color: lightgreen;
+    border: 0;
+}
+
+/* API Footer Reference Links */
+footer a{
+    color: white;
 }

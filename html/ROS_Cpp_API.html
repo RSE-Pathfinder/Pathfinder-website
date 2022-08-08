@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link rel="stylesheet" href="../css/ROS_API.css">
-<link rel="stylesheet" href="../css/header.css">
-<link rel="icon" href="/assets/images/pathfinder_icon.png">
-<title>ROS C++ API</title>
+<!-- Links -->
+<head>
+    <title>ROS C++ API</title>
+    <link rel="stylesheet" href="../css/ROS_API.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="icon" href="/assets/images/pathfinder_icon.png">
+</head>
 
+<!-- Header -->
 <header>
     <!-- Navigation bar -->
-    <h1 style="text-align:center;"><a style="text-decoration: none;color: white;"href="../index.html">RSE2107A Systems Engineering Project</a></h1>
+    <h1 class="title"><a href="../index.html">RSE2107A Systems Engineering Project</a></h1>
     <div class="navbarhead">
         <div class="navbar">
             <div class="dropdown">
@@ -26,6 +30,8 @@
                 </button>
                 <div class="dropdown-content">
                     <a href="../html/Project_1.html">Project 1: Land Based Automated Locomotive</a>
+                    <a href="../html/Project_2.html">Project 2: Follow-me Functionality</a>
+                    <a href="../html/SEP_1.html">Systems Engineering Project 1: Autonomous Patrolling & Object Detection</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -39,9 +45,7 @@
 </header>
 
 <body>
-
-<!-- Table of Contents -->
-<p>
+    <!-- Table of Contents -->
     <ol class="ToC">
         Table of Contents
         <li><a href="#Init">Node initialisation</a></li>
@@ -94,21 +98,19 @@
             <li>ros::InvalidNameException</li>
         </ul>
     </ol>
-</p>
 
-<!-- Main Body -->
-<p>
-    <ol>
+    <!-- Main Body -->
+    <ol class="API">
         <!-- Part 1 -->
-        <li id="Init" class="Sub">Node initialisation</li>
+        <li id="Init">Node initialisation</li>
         <div class="node"><!-- ros::init() -->
             <code>ros::init( &lt;argc&gt;, &lt;argv&gt;, &lt;node_name&gt;, &lt;options&gt;)</code>
             <ul>
                 At the begining of your code, you need to initialize the node in order for it to be registered in the ROS network.
-                <li class="Sub">&lt;argc&gt; (int)</li> The number of terminal inputs.
-                <li class="Sub">&lt;argv&gt; (char**)</li> The list of terminal input. Remapping arguments are processed here.
-                <li class="Sub">&lt;node_name&gt; (std::string)</li> Name of the node.
-                <li class="Sub">&lt;options&gt; (uint32_t)</li> Additional operations for initialisation.
+                <li>&lt;argc&gt; (int)</li> The number of terminal inputs.
+                <li>&lt;argv&gt; (char**)</li> The list of terminal input. Remapping arguments are processed here.
+                <li>&lt;node_name&gt; (std::string)</li> Name of the node.
+                <li>&lt;options&gt; (uint32_t)</li> Additional operations for initialisation.
                 <ul>
                     <li class="Sub2">ros::init_options::NoSigninHandler</li>
                     This prevents the installation of the SIGNINT handler which makes sure the node gets shutdown properly.
@@ -124,9 +126,9 @@
             <code>ros::NodeHandle &lt;handle_name&gt;(&lt;namespace&gt;)</code>
             <ul>
                 After initialising the node, create a node handler which will manage an internal reference count for starting and shutting down a node.
-                <li class="Sub">&lt;handle_name&gt;</li>
+                <li>&lt;handle_name&gt;</li>
                 The object name of the handler.
-                <li class="Sub">&lt;namespace&gt;</li>
+                <li>&lt;namespace&gt;</li>
                 Specifies the namespace the handler is located in, this can be a literal string or a node handler followed by a string.
                 <span style="color: lightgreen;"><br>
                     E.g.
@@ -137,7 +139,7 @@
         </div>
 
         <!-- Part 2 -->
-        <li id="Pub" class="Sub">Publishing</li>
+        <li id="Pub">Publishing</li>
         <div class="node">
             <code></code>
             <ul>
@@ -146,7 +148,7 @@
         </div>
 
         <!-- Part 3 -->
-        <li id="Sub" class="Sub">Subscribing</li>
+        <li id="Sub">Subscribing</li>
         <div class="node">
             <code></code>
             <ul>
@@ -155,7 +157,7 @@
         </div>
 
         <!-- Part 4 -->
-        <li id="Serv" class="Sub">Services</li>
+        <li id="Serv">Services</li>
         <div class="node">
             <code></code>
             <ul>
@@ -164,7 +166,7 @@
         </div>
 
         <!-- Part 5 -->
-        <li id="TnD" class="Sub">Time & Delays</li>
+        <li id="TnD">Time & Delays</li>
         <div class="node">
             <code></code>
             <ul>
@@ -173,7 +175,7 @@
         </div>
 
         <!-- Part 6 -->
-        <li id="Loop" class="Sub">Loops</li>
+        <li id="Loop">Loops</li>
         <div class="node">
             <code></code>
             <ul>
@@ -182,7 +184,7 @@
         </div>
 
         <!-- Part 7 -->
-        <li id="Extra" class="Sub">Extras</li>
+        <li id="Extra">Extras</li>
         <div class="node">
             <code></code>
             <ul>
@@ -191,7 +193,7 @@
         </div>
 
         <!-- Part 8 -->
-        <li id="Excep" class="Sub">Exceptions</li>
+        <li id="Excep">Exceptions</li>
         <div class="node">
             <code></code>
             <ul>
@@ -199,8 +201,6 @@
             </ul>
         </div>
     </ol>
-</p>
-
 </body>
 
 <h2>By: Muhammad Syamim Bin Shamsulbani</h2>
