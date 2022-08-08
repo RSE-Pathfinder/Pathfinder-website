@@ -16,7 +16,7 @@ ol.ToC{
 code{
     font-size: 25px;
 }
-div{
+div.node{
     border: 2px solid white;
     max-width: fit-content;
     padding: 20px;
