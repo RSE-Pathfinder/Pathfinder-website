@@ -1,9 +1,10 @@
 /* Default Color Scheme */
 html{
-    background-color: black;
     color: white;
-    font-family:'Cambria New', Cambria, monospace;
+    background-color: black;
+    font-family:'Helvetica', sans-serif;
     font-size: 20px;
+    margin: 0;
 }
 
 .navbarhead{
@@ -97,6 +98,7 @@ h1.title a{
 
 /* Left About us segment */
 .left-about{
+    background-color: black;
     border: 2px solid white;
     padding: 10px;
     margin: 10px;
