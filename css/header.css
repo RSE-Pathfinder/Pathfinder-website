@@ -98,10 +98,8 @@ h1.title a{
 
 /* Left About us segment */
 .left-about{
-    background-color: black;
-    border: 2px solid white;
-    padding: 10px;
-    margin: 10px;
+    border: 10px solid white;
+    margin: auto;
     margin-right: 35%;
     text-align: center;
     display: grid;
@@ -109,9 +107,8 @@ h1.title a{
 
 /* Right About us segment */
 .right-about{
-    border: 2px solid white;
-    padding: 10px;
-    margin: 10px;
+    border: 10px solid white;
+    margin: auto;
     margin-left: 35%;
     text-align: center;
     display: grid;
@@ -119,10 +116,12 @@ h1.title a{
 
 /* Left grid */
 .left{
+    background-color: dimgray;
     grid-column: 1;
 }
 
 /* Right grid */
 .right{
+    background-color: dimgray;
     grid-column: 2;
 }
