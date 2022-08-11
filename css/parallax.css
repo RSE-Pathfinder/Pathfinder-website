@@ -8,7 +8,7 @@ body, html {
     background-image: url('https://i.imgur.com/JJ07i7o.png');
 
     /* Full height */
-    height: 20%; 
+    height: 25%; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -70,8 +70,9 @@ body, html {
 .caption span.border {
     background-color: dimgray;
     color: white;
-    padding: 18px;
+    padding: 24px;
     font-family: "Lato", sans-serif;
-    font-size: 25px;
-    letter-spacing: 10px;
+    font-size: 32px;
+    letter-spacing: 12px;
+    word-spacing: 4px;
 }
