@@ -1,0 +1,32 @@
+/* 5 columns side by side */
+.div_character_card {
+  float: left;
+  width: 19.6%;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  padding: 0 4px;
+  margin: 0.2%;
+}
+
+@media screen and (max-width: 650px) {
+  .div_character_card {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Limit img width to card size */
+.div_character_card img {
+  object-fit: cover;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+/* Some left and right padding inside the container */
+.div_character_card_description {
+  height: auto;
+  font-size: 16px;
+  margin: 5px;
+  padding: 0 1px;
+}
