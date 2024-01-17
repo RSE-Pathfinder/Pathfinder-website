@@ -1,239 +1,253 @@
 <!DOCTYPE html>
+<!-- HTML -->
 <html lang="en">
 
-<!-- Head -->
+<!-- Page Head -->
+
 <head>
+
+    <!-- Page Title-->
     <title>Pathfinder</title>
-    <link rel="icon" href="https://i.imgur.com/GavixLW.png">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/parallax.css">
+
+    <!-- Style Sheets -->
+    <link rel="icon" href="assets/pathfinderlogo.jpg">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slideshowgallery.css">
+    <link rel="stylesheet" href="css/aboutusgallery.css">
+
+    <!-- Inline Style -->
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: -8px;
+            right: 35px;
+            z-index: 99;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            background-color: darkslategray;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 2px;
+            opacity: 50%;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 
-<!-- Disable Mobile Scrolling -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- Header -->
-<header>
-    <h1 class="title">
-        <a href="index.html">
-            ROBOTICS SYSTEMS
-        </a>
-    </h1>
-</header>
-
 <!-- Body -->
-<body style="text-align: center">
 
-<!-- Navigation Dropdown Bar -->
-<div class="navbarhead">
-    <div class="navbar">
-        <div class="dropdown">
-            <button class="dropbtn">API Documentation
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="html/ROS_Python_API.html">ROS Python API</a>
-                <a href="html/ROS_Cpp_API.html">ROS C++ API</a>
+<body>
+
+    <!-- toTop Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Return to Top</button>
+
+    <!-- Header -->
+    <header class="header_title">
+        <h1>
+            <a href="index.html">TEAM PATHFINDER</a>
+        </h1>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="#project-gallery">Project Gallery</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#about-the-team">About the Team</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Project Gallery -->
+    <section id="project-gallery" class="div_gallery">
+        <h1>Project Gallery</h1>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://i.imgur.com/VLjTif2.jpg">
+                    <img src="https://i.imgur.com/VLjTif2.jpg" alt="">
+                </a>
+                <div class="gallery_description">Tele-Operated Semi-Autonomous Robot</div>
             </div>
         </div>
-        <div class="dropdown">
-            <button class="dropbtn">Projects
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="html/Project_1.html">Project 1: Land Based Automated Locomotive</a>
-                <a href="html/Project_2.html">Project 2: Follow-Me Functionality</a>
-                <a href="html/SEP_1.html">Systems Engineering Project 1: Autonomous Patrolling & Object Detection</a>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://i.imgur.com/zcm8NNw.jpeg">
+                    <img src="https://i.imgur.com/zcm8NNw.jpeg" alt="">
+                </a>
+                <div class="gallery_description">Autonomous Robot for Object Tracking</div>
             </div>
         </div>
-        <div class="dropdown">
-            <a href="html/gallery.html">Gallery</a>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://i.imgur.com/n8Zy3jI.jpg">
+                    <img src="https://i.imgur.com/n8Zy3jI.jpg" alt="">
+                </a>
+                <div class="gallery_description">Autonomous Robot for Object Tracking</div>
+            </div>
         </div>
-    </div>
-</div>
 
-<div class="parallax"></div>
-
-<!-- Project Table -->
-<table style="margin: auto;
-              width: 100%; 
-              background-color: rgb(30, 30, 30); 
-              color: white;
-              border: 5px solid dimgray;" 
-       border="1px"
-       border-spacing="50px" 
-       cellpadding="30px">
-    <tr>
-        <td style="width: 33%">
-            <a href="html/Project_1.html" style="color: white; font-size: x-large;">Project 1</a>
-            <p style="font-size: large">Land Based Automated Locomotive</p>
-            <img src="https://i.imgur.com/VLjTif2.jpg" width="300" height="300"/>
-            <br><br>
-        </td>
-        <td style="width: 33%">
-            <a href="html/Project_2.html" style="color: white; font-size: x-large;">Project 2</a>
-            <p style="font-size: large">Follow-me Functionality</p>
-            <img src="https://i.imgur.com/n8Zy3jI.jpg" width="300" height="300"/>
-            <br><br>
-        </td>
-        <td style="width: 33%">
-            <a href="html\SEP_1.html" style="color: white; font-size: x-large;">Systems Engineering Project 1</a>
-            <p style="font-size: large">Autonomous Patrolling & Object Detection</p>
-            <img src="https://i.imgur.com/g0yMMFH.jpg" width="300" height="300"/>
-            <br><br>
-        </td>
-    </tr>
-</table>
-
-<div class="parallax"></div>
-<div class="parallax"></div>
-
-<!-- About sUs -->
-<div class="parallax">
-    <div class="caption">
-        <span class="border">ABOUT US</span>
-    </div>
-</div>
-
-<div class="parallax"></div>
-
-<div style="background-color: white; 
-            color: dimgray; 
-            text-align: center; 
-            padding: 64px;">
-    <p style="font: 24px 'Lato', sans-serif; 
-              letter-spacing: 5px; 
-              text-transform: uppercase;
-              padding: 16px">
-        Navigating forward
-    </p>
-    <p style="font-size: 20px; 
-              padding: 16px">
-        Team Pathfinder is a group of Robotics Systems undergraduates from the Singapore Institute of Technology.<br>
-        The team consists of five members: Paul Yong, Muhammad Syamim, Lim Jun Hao Derek, Joshua Ng, Bryan Sentoso.<br>
-        This website is a personal project by the team to document our learning journey in Robotics Systems.<br>
-    </p>
-</div>
-
-<div class="parallax"></div>
-<div class="parallax"></div>
-
-<!-- Syamim -->
-<div class="parallax">
-    <div class="left-about">
-        <div class="left">
-            <img src="https://i.imgur.com/dQFisNe.jpg" height="350">
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://i.imgur.com/g0yMMFH.jpg">
+                    <img src="https://i.imgur.com/g0yMMFH.jpg" alt="">
+                </a>
+                <div class="gallery_description">Multi-Modal Development Platform for Navigation</div>
+            </div>
         </div>
-        <div class="right">
-            <p style="font-size: xx-large; letter-spacing: 3px; word-spacing: 6px;">Muhammad Syamim</p>
-            Passionate in robotics, especially in exosuit and wearable robotics technologies.<br>
-            I take pride in my software skills specifically in C++, Python and Java.<br>
-            My hobbies are tinkering and building my own robots and software.<br>
-            <br><br>
-            Github: <a href="https://github.com/VOCOM" style="color: white;">https://github.com/VOCOM</a><br>
-            Linkedin: <a href="https://www.linkedin.com/in/syamim-shamsulbani/" style="color: white;">https://www.linkedin.com/in/syamim-shamsulbani/</a>
-        </div>
-    </div>
-</div>
 
-<div class="parallax"></div>
-<div class="parallax"></div>
-    
-<!-- Paul -->
-<div class="parallax">
-    <div class="right-about">
-        <div class="left">
-            <p style="font-size: xx-large; letter-spacing: 3px; word-spacing: 6px;">Paul Yong</p>
-            Inspired by Mobile Suit Gundam<br>
-            Proficient in C/C++<br>
-            I believe in using Robotics to improve our Quality of Life<br>
-            <br><br>
-            Github: <a href="https://github.com/yongpaulsit/" style="color: white;">https://github.com/yongpaulsit/</a><br>
-            Linkedin: <a href="https://www.linkedin.com/in/paulyongshaoen/" style="color: white;">https://www.linkedin.com/in/paulyongshaoen/</a><br>
-            Wixsite: <a href="https://paulyse99.wixsite.com/aboutme" style="color: white;">https://paulyse99.wixsite.com/aboutme</a>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://i.imgur.com/YAU53Fl.jpeg">
+                    <img src="https://i.imgur.com/YAU53Fl.jpeg" alt="">
+                </a>
+                <div class="gallery_description">Book Storage and Sorting System</div>
+            </div>
         </div>
-        <div class="right">
-            <img style="height: 350px;" src="https://i.imgur.com/LcDxMyE.jpg"><br>
-        </div>
-    </div>
-</div>
 
-<div class="parallax"></div>
-<div class="parallax"></div>
-
-<!-- Bryan -->
-<div class="parallax">
-    <div class="left-about">
-        <div class="left">
-            <img src="https://i.imgur.com/3Pj5Vv8.jpg?1" height="350"><br>
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="https://i.imgur.com/Vn5yBjY.jpeg">
+                    <img src="https://i.imgur.com/Vn5yBjY.jpeg" alt="">
+                </a>
+                <div class="gallery_description">Thermoelectric Cooling Fan</div>
+            </div>
         </div>
-        <div class="right">
-            <p style="font-size: xx-large; letter-spacing: 3px; word-spacing: 6px;">Bryan Sentoso</p>
-            Interested in Human-Robot interactions and Humanoids.<br>
-            Enjoys exploring ideas that enhances people's lives and broaden the realm of possibilities.<br>
-            <br><br>
-            Github: <a href="https://github.com/BryanSentoso" style="color:white;">https://github.com/BryanSentoso</a><br> 
-            Linkedin: <a href="www.linkedin.com/in/bryan-sentoso/" style="color:white;">www.linkedin.com/in/bryan-sentoso</a><br>
-            Wixsite: <a href="https://tiobryan07.wixsite.com/bryansentoso" style="color: white;">https://tiobryan07.wixsite.com/bryansentoso</a>
-        </div>
-    </div>
-</div>
 
-<div class="parallax"></div>
-<div class="parallax"></div>
+        <div class="clearfix"></div>
+    </section>
 
-<!-- Derek -->
-<div class="parallax">
-    <div class="right-about">
-        <div class="left">
-            <p style="font-size: xx-large; letter-spacing: 3px; word-spacing: 6px;">Derek Lim</p>
-            Curious about the impact of Robotics to the world as technology advances.<br>
-            I like to explore about how robots can be used to benefit the world and <br> 
-            would like to be one of the contributors to these robots in the future. <br>
-            <br><br>
-            Github: <a href="https://github.com/dereklim97" style="color: white;">https://github.com/dereklim97/</a><br>
-            Linkedin: <a href="https://www.linkedin.com/in/derek-lim/" style="color: white;">https://www.linkedin.com/in/derek-lim/</a>
+    <!-- Introduction -->
+    <section id="introduction" class="div_introduction">
+        <div class="div_introduction_image">
+            <img src="https://i.imgur.com/29pAh3I.jpg" alt="Team Pathfinder">
         </div>
-        <div class="right">
-            <img style="height: 350px;" src="https://i.imgur.com/nckNip3.jpg">
-        </div>
-    </div>
-</div>
+        <h1>NAVIGATING FORWARD</h1>
+        <p>Team Pathfinder is a group of Robotics Systems undergraduates from the Singapore Institute of Technology.<br>
+            The team consists of five members: Paul Yong, Muhammad Syamim, Lim Jun Hao Derek, Joshua Ng, Bryan
+            Sentoso.<br>
+            This website is a project by the team to document our learning journey.
+        </p>
+    </section>
 
-<div class="parallax"></div>
-<div class="parallax"></div>
+    <!-- Team Gallery -->
+    <section id="about-the-team" class="div_about">
+        <h1>About the Team</h1>
 
-<!-- Joshua -->
-<div class="parallax">
-    <div class="left-about">
-        <div class="left">
-            <img style="height: 350px;" src="https://i.imgur.com/xYDdUeM.jpg">
-        </div>
-        <div class="right">
-            <p style="font-size: xx-large; letter-spacing: 3px; word-spacing: 6px;">Joshua Ng</p>
-            Originally an Aerospace Background, I have been intrigued by how Computer<br>
-            Science gives me the ability to create useful programs from my very own computer.<br>
-            I particularly enjoy programming learning aids.<br>
-            <br><br>
-            Github: <a href="https://github.com/joshua0801" style="color: white;">https://github.com/joshua0801</a><br>
-            Linkedin: <a href="https://www.linkedin.com/in/joshuasanheeng0801/" style="color: white;">https://www.linkedin.com/in/joshuasanheeng0801/</a>
-        </div>
-    </div>
-</div>
+        <!-- Team Gallery Container -->
+        <div class="div_character_deck">
 
-<div class="parallax"></div>
-<div class="parallax"></div>
+            <!-- Syamim -->
+            <div class="div_character_card">
+                <img src="https://i.imgur.com/dQFisNe.jpg" alt="Syamim">
+                <div class="div_character_card_description">
+                    <h2>Muhammad Syamim</h2>
+                    <p>Passionate in robotics, especially in exosuit and wearable robotics technologies.</p>
+                    <p>I take pride in my software skills especially in C++, Python and Java.</p>
+                    <p>My hobbies are tinkering and building my own robots and software.</p>
+                    <div class="div_character_card_description_links">
+                        <p><a href="https://github.com/VOCOM/">GitHub</a></p>
+                        <p><a href="https://www.linkedin.com/in/syamim-shamsulbani/">LinkedIn</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paul -->
+            <div class="div_character_card">
+                <img src="https://i.imgur.com/LcDxMyE.jpg" alt="Paul">
+                <div class="div_character_card_description">
+                    <h2>Paul Yong</h2>
+                    <p>I believe in using Robotics to improve our Quality of Life.</p>
+                    <div class="div_character_card_description_links">
+                        <p><a href="https://github.com/yongpaulsit/">GitHub</a></p>
+                        <p><a href="https://www.linkedin.com/in/paulyongshaoen/">LinkedIn</a></p>
+                        <p><a href="https://paulyse99.wixsite.com/aboutme/">Website</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bryan -->
+            <div class="div_character_card">
+                <img src="https://i.imgur.com/3Pj5Vv8.jpg" alt="Bryan">
+                <div class="div_character_card_description">
+                    <h2>Bryan Sentoso</h2>
+                    <p>Interested in Human-Robot interactions and Humanoids.</p>
+                    <p>Enjoys exploring ideas that enhances people's lives and broaden the realm of possibilities.</p>
+                    <div class="div_character_card_description_links">
+                        <p><a href="https://github.com/BryanSentoso/">GitHub</a></p>
+                        <p><a href="https://www.linkedin.com/in/bryan-sentoso/">LinkedIn</a></p>
+                        <p><a href="https://tiobryan07.wixsite.com/bryansentoso/">Website</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Derek -->
+            <div class="div_character_card">
+                <img src="https://i.imgur.com/nckNip3.jpg" alt="Derek">
+                <div class="div_character_card_description">
+                    <h2>Derek Lim</h2>
+                    <p>Curious about the impact of Robotics to the world as technology advances.</p>
+                    <p>I like to explore about how robots can be used to benefit the world and</p>
+                    <p>would like to be one of the contributors to these robots in the future.</p>
+                    <div class="div_character_card_description_links">
+                        <p><a href="https://github.com/dereklim97">GitHub</a></p>
+                        <p><a href="https://www.linkedin.com/in/derek-lim/">LinkedIn</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Joshua -->
+            <div class="div_character_card">
+                <img src="https://i.imgur.com/xYDdUeM.jpg" alt="Joshua">
+                <div class="div_character_card_description">
+                    <h2>Joshua Ng</h2>
+                    <p>Originally an Aerospace Background, I have been intrigued by how Computer</p>
+                    <p>Science gives me the ability to create useful programs from my very own computer</p>
+                    <p>I particularly enjoy programming learning aids.</p>
+                    <div class="div_character_card_description_links">
+                        <p><a href="https://github.com/joshua0801">GitHub</a></p>
+                        <p><a href="https://www.linkedin.com/in/joshuasanheeng0801/">LinkedIn</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <h3>Acknowledgements</h3>
+        <p>This website is being hosted on GitHub Pages. For more information on GitHub Pages, click <a
+                href="https://pages.github.com/">here</a></p>
+        <p>To view the source code for this website, click <a
+                href="https://github.com/RSE2107A-AY2122T3-Team-4/RSE2107A-AY2122T3-Team-4.github.io">here</a></p>
+    </footer>
+
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 </body>
-    
-<!-- Footer -->
-<div style="color: black; 
-            background-color: white; 
-            text-align: center; 
-            padding: 2%">
-    This website is being hosted on GitHub Pages.
-    For more information on GitHub Pages, click <a style="color: dimgray;" href="https://pages.github.com/">here</a><br>
-    To view the source code for this website, click <a style="color: dimgray;" href="https://github.com/RSE2107A-AY2122T3-Team-4/RSE2107A-AY2122T3-Team-4.github.io">here</a><br>
-</div>
 
 </html>
